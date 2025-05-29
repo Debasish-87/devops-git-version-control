@@ -1,12 +1,39 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+      - dev
+      - feature/*
+  pull_request:
+    branches:
+      - main
+      - dev
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
-    - name: Run a one-line script
-      run: echo Hello from GitHub Actions
+      - name: Checkout repository code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js (optional, remove if not needed)
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Run build script (replace with your build/test commands)
+        run: |
+          echo "Running build steps..."
+          # e.g. npm install
+          # npm test
+
+      - name: Run lint (optional)
+        run: |
+          echo "Running lint..."
+          # e.g. npm run lint
+
+      - name: Finish
+        run: echo "CI workflow completed successfully!"
