@@ -38,22 +38,22 @@ This repository aims to help you learn and implement version control workflows e
 
 ## Directory Structure
 
+```
+
 devops-git-version-control/
 ├── .gitignore
 ├── README.md
 ├── scripts/
-│ └── setup.sh
+│   └── setup.sh
 ├── docs/
-│ └── git-workflows.md
+│   └── git-workflows.md
 ├── examples/
-│ └── sample-git-commands.txt
+│   └── sample-git-commands.txt
 └── .github/
 └── workflows/
 └── ci.yml
 
-markdown
-Copy
-Edit
+````
 
 - `scripts/` — contains automation scripts  
 - `docs/` — documentation related to Git workflows  
@@ -74,35 +74,60 @@ Edit
 ```bash
 git clone https://github.com/Debasish-87/devops-git-version-control.git
 cd devops-git-version-control
-Branch Usage
-Work on dev branch for ongoing development
+````
 
-Create feature branches off dev for new features/fixes
+---
 
-Use pull requests to merge changes to dev and then to main
+## Branch Usage
 
-Branching Strategy
-Branch	Purpose
-main	Production-ready code
-dev	Integration and ongoing development
-feature/*	Feature-specific branches off dev
+* Work on `dev` branch for ongoing development
+* Create feature branches off `dev` for new features/fixes
+* Use pull requests to merge changes to `dev` and then to `main`
 
-Pull requests are required to merge feature/* branches into dev, and dev into main.
+---
 
-Continuous Integration (CI)
+## Branching Strategy
+
+| Branch      | Purpose                             |
+| ----------- | ----------------------------------- |
+| `main`      | Production-ready code               |
+| `dev`       | Integration and ongoing development |
+| `feature/*` | Feature-specific branches off `dev` |
+
+Pull requests are required to merge `feature/*` branches into `dev`, and `dev` into `main`.
+
+---
+
+## Continuous Integration (CI)
+
 This project uses GitHub Actions to automate builds and checks on each push or pull request.
 
-Workflow file: .github/workflows/ci.yml
+Workflow file: `.github/workflows/ci.yml`
 
-Contributing
+---
+
+## Contributing
+
 Feel free to fork the repository and submit pull requests. Please follow the branching strategy and write clear commit messages.
 
-License
+---
+
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for details.
 
-Contact
-Debasish Mohanty
-GitHub: https://github.com/Debasish-87
-Email: (your.email@example.com) (optional)
+---
+
+## Contact
+
+**Debasish Mohanty**
+GitHub: [https://github.com/Debasish-87](https://github.com/Debasish-87)
+Email: ([your.email@example.com](mailto:your.email@example.com)) *(optional)*
+
+---
 
 Happy Git branching and merging! 🚀
+
+```
+
+
