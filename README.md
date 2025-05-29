@@ -106,6 +106,24 @@ Workflow file: `.github/workflows/ci.yml`
 
 ---
 
+## Screenshots
+
+### Branches
+![Branches](screenshots/branches.png)
+
+### Pull Request
+![Pull Request](screenshots/pull-request.png)
+
+### GitHub Actions
+![GitHub Actions](screenshots/action.png)
+
+### Commits
+![Commits](screenshots/commits.png)
+
+### Release Tags
+![Release Tags](screenshots/release-tags.png)
+
+
 ## Contributing
 
 Feel free to fork the repository and submit pull requests. Please follow the branching strategy and write clear commit messages.
