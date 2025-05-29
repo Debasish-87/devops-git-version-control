@@ -1,10 +1,58 @@
+# Basic Git Commands
+
+# Initialize a new Git repository
 git init
+
+# Check the status of your working directory and staging area
 git status
+
+# Add changes to staging area (add all files)
 git add .
-git commit -m "Message"
-git push
-git checkout -b feature/branch-name
-git merge
-git rebase
+
+# Commit staged changes with a descriptive message
+git commit -m "Your commit message here"
+
+# View commit history
+git log
+
+# View a simplified one-line commit history graph
+git log --oneline --graph --all
+
+# Create a new branch and switch to it
+git checkout -b feature-branch
+
+# Switch to an existing branch
+git checkout main
+
+# Merge another branch into your current branch
+git merge feature-branch
+
+# Fetch latest changes from remote without merging
+git fetch origin
+
+# Pull latest changes from remote and merge automatically
+git pull origin main
+
+# Push your local branch to the remote repository
+git push origin main
+
+# View remote repositories
+git remote -v
+
+# Create a lightweight tag
 git tag v1.0.0
+
+# Push tags to remote
+git push origin --tags
+
+# Stash your current changes (save them temporarily)
 git stash
+
+# Apply stashed changes and remove from stash list
+git stash pop
+
+# Delete a local branch
+git branch -d feature-branch
+
+# Delete a remote branch
+git push origin --delete feature-branch
