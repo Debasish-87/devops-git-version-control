@@ -220,5 +220,3 @@ Email: ([your.email@example.com](mailto:your.email@example.com)) *(optional)*
 Happy Git branching and merging! 🚀
 
 ```
-
-
