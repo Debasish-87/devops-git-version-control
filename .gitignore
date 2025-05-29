@@ -1,6 +1,57 @@
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore logs and temp files
 *.log
-__pycache__/
-*.pyc
 *.tmp
+*.temp
+
+# Ignore environment variable files
 .env
+.env.local
+.env.*.local
+
+# Ignore node_modules if any Node.js projects
 node_modules/
+
+# Ignore Python cache and bytecode
+__pycache__/
+*.py[cod]
+
+# Ignore compiled binaries and build folders
+/build/
+/dist/
+/bin/
+/obj/
+
+# Ignore IDE/editor settings
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore generated files from scripts or CI
+coverage/
+*.coverprofile
+reports/
+
+# Ignore Terraform files (if used)
+*.tfstate
+*.tfstate.backup
+.terraform/
+
+# Ignore Kubernetes config files (optional)
+.kube/
+
+# Ignore backup files
+*~
+*.bak
+*.swp
+
+# Ignore secrets (if any mistakenly committed)
+secret.key
+credentials.json
+
