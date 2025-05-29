@@ -1,0 +1,10 @@
+git init
+git status
+git add .
+git commit -m "Message"
+git push
+git checkout -b feature/branch-name
+git merge
+git rebase
+git tag v1.0.0
+git stash
